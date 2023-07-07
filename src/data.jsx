@@ -9,12 +9,11 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/weather1.png';
-import Work2 from './assets/rickandmorty.png';
+import Work1 from './assets/portafolio2.png';
+import Work2 from './assets/morty.png';
 import Work3 from './assets/pokedex1.png';
 import Work4 from './assets/ecomerse.png';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
+
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -189,36 +188,48 @@ export const resume = [
   },
 ];
 
+import html from './assets/htmltotal.png'
+import Js from './assets/java.png'
+import css from './assets/css.png'
+import figma from './assets/figma.png'
+import react from './assets/react.png'
+import notejs from './assets/node.png'
+
 export const skills = [
   {
     id: 1,
     title: 'Html',
     percentage: '70',
+    img: html,
   },
 
   {
     id: 2,
     title: 'Javascript',
     percentage: '80',
+    img: Js,
   },
 
   {
     id: 3,
     title: 'Css',
     percentage: '80',
+    img: css,
   },
 
   {
     id: 4,
     title: 'Figma',
-    percentage: '66',
+    percentage: '60',
+    img: figma,
   },
 
-  // {
-  //   id: 5,
-  //   title: 'Wordpress',
-  //   percentage: '95',
-  // },
+  {
+    id: 5,
+    title: 'Note',
+    percentage: '30',
+    img: notejs,
+  },
 
   // {
   //   id: 6,
@@ -235,7 +246,8 @@ export const skills = [
   {
     id: 8,
     title: 'React',
-    percentage: '45',
+    percentage: '85',
+    img: react,
   },
 ];
 
@@ -415,11 +427,11 @@ export const themes = [
     color: 'hsl(4, 93%, 54%)',
   },
 
-  // {
-  //   id: 3,
-  //   img: Theme3,
-  //   color: 'hsl(271, 76%, 53%)',
-  // },
+  {
+    id: 3,
+    img: Theme3,
+    color: 'hsl(271, 76%, 53%)',
+  },
 
   {
     id: 4,
@@ -451,11 +463,11 @@ export const themes = [
   //   color: 'hsl(19, 96%, 52%)',
   // },
 
-  {
-    id: 9,
-    img: Theme9,
-    color: '#00FF00',
-  },
+  // {
+  //   id: 9,
+  //   img: Theme9,
+  //   color: '#00FF00',
+  // },
 
   // {
   //   id: 10,

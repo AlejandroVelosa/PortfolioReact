@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
     FaEnvelopeOpen,
     FaPhoneSquareAlt,
@@ -7,13 +7,16 @@ import {
     FaWhatsapp,
     FaDribbble,
 } from "react-icons/fa";
-
-
 import { FiSend } from "react-icons/fi";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import "./contact.css";
 
 const Contact = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, [])
     return (
         <section className="contact section">
             <h2 className="section_title">
@@ -21,7 +24,8 @@ const Contact = () => {
             </h2>
 
             <div className="contact_container container grid">
-                <div className="contact_data">
+
+                <div className="contact_data" data-aos="fade-right">
                     <h3 className="contact_title">Don't be Shy !</h3>
 
                     <p className="contact_description">
@@ -64,7 +68,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form className="contact_form">
+                <form className="contact_form" data-aos="fade-left">
                     <div className="form_input-group">
                         <div className="form_input-div">
                             <input
@@ -107,6 +111,8 @@ const Contact = () => {
                         </span>
                     </button>
                 </form>
+
+
             </div>
         </section>
     );

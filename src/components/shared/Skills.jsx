@@ -6,7 +6,7 @@ import "react-circular-progressbar/dist/styles.css";
 const Skills = () => {
     return (
         <>
-            {skills.map(({ title, percentage }, index) => {
+            {skills.map(({ title, percentage, img }, index) => {
                 return (
                     <div className="progress_box" key={index}>
                         <div className="progress_circle">
@@ -17,7 +17,10 @@ const Skills = () => {
                             />
                         </div>
 
-                        <h3 className="skills_title">{title}</h3>
+                        <div className="name_img">
+                            <h3 className="skills_title">{title}</h3>
+                            <img className="skills_img" src={img} alt="" />
+                        </div>
                     </div>
                 );
             })}

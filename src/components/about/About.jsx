@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Info from "../shared/Info";
 import Stats from "../shared/Stats";
 import { FaDownload } from "react-icons/fa"
 import Skills from "../shared/Skills";
 import { resume } from "../../data";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import './about.css'
 import Resumen from "../shared/Resumen";
 
 
+
 const About = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, [])
+
     return (
         <main className="section container">
-            <section className="about">
+            <section className="about" data-aos="flip-left">
                 <h2 className="section_title">
                     About <span>Me</span>
                 </h2>
@@ -39,7 +47,7 @@ const About = () => {
 
             <div className="separator"></div>
 
-            <section className="skills">
+            <section className="skills" data-aos="zoom-in-down">
                 <h3 className="section_subtitle subtitle_center">My Skills</h3>
 
                 <div className="skills_container grid">
@@ -49,7 +57,7 @@ const About = () => {
 
             <div className="separator"></div>
 
-            <section className="resumen">
+            <section className="resumen" data-aos="zoom-in-down">
                 <h3 className="section_subtitle subtitle_center">Education</h3>
 
 

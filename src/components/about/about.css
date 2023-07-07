@@ -69,14 +69,35 @@
     margin-bottom: 50px;
 }
 .skills_container{
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
     row-gap: 48px;
+
+}
+
+.name_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skills_img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
 }
 .progress_circle{
     width: 120px;
     height: 120px;
     
+}
+
+.progress_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .CircularProgressbar-path {
@@ -101,13 +122,21 @@
     font-size: var(--normal-font-size) ;
     font-weight: var(--weight-400);
     margin-top: 24px;
-    text-align: center;
     margin-top: 24px;
 }
+
 
 .resumen_item{
     position: relative;
     padding-left: 60px;
+}
+
+.resumen_container{
+
+    display: grid;
+    grid-template-columns: 1fr; 
+    padding: 1rem;
+
 }
 
 .resumen_item:not(:last-child){
