@@ -8,7 +8,7 @@ import "./style/Themes.css";
 
 // para cambiar el color de la pagina
 const getStorageColor = () => {
-    let color = '#FF0000'
+    let color = 'hsl(225, 73%, 57%)'
     if (localStorage.getItem('color')) {
         color = localStorage.getItem('color')
     }

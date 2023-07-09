@@ -25,6 +25,7 @@
     color: var(--title-color);
     font-size: 24px;
 }
+
 .nav_name {
     font-weight: var(--weight-500);
 }
@@ -32,7 +33,8 @@
 
 .active-nav .nav__icon,
 .active-nav .nav_name {
-    color: var(--first-color);
+    color: white;
+
 }
 
 .nav_toggle{
