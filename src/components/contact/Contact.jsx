@@ -14,6 +14,7 @@ import "./contact.css";
 
 const Contact = () => {
 
+
     useEffect(() => {
         Aos.init({ duration: 1000 });
     }, [])
@@ -47,7 +48,7 @@ const Contact = () => {
 
                             <div>
                                 <span className="info_title">Call Me</span>
-                                <h4 className="info_desc">+57 3103366926</h4>
+                                <h4 className="info_desc">+57 3028387688</h4>
                             </div>
                         </div>
                     </div>

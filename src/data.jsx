@@ -6,11 +6,13 @@ import {
   FaBriefcase,
   FaGraduationCap,
   FaCode,
+  FaEye,
+
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/portafolio2.png';
-import Work2 from './assets/morty.png';
+import Work1 from './assets/ModaFit.png';
+import Work2 from './assets/rickmort.png';
 import Work3 from './assets/pokedex1.png';
 import Work4 from './assets/ecomerse.png';
 
@@ -194,6 +196,8 @@ import css from './assets/css.png'
 import figma from './assets/figma.png'
 import react from './assets/react.png'
 import notejs from './assets/node.png'
+import git from './assets/git.png'
+import gitHub from './assets/gitHub.png'
 
 export const skills = [
   {
@@ -231,17 +235,19 @@ export const skills = [
     img: notejs,
   },
 
-  // {
-  //   id: 6,
-  //   title: 'Jquery',
-  //   percentage: '50',
-  // },
+  {
+    id: 6,
+    title: 'Git',
+    percentage: '50',
+    img: git,
+  },
 
-  // {
-  //   id: 7,
-  //   title: 'Angular',
-  //   percentage: '65',
-  // },
+  {
+    id: 7,
+    title: 'GitHub',
+    percentage: '65',
+    img: gitHub,
+  },
 
   {
     id: 8,
@@ -251,16 +257,18 @@ export const skills = [
   },
 ];
 
+
 export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'Weather App',
+    title: 'Moda Fit',
+    gitHub: 'https://github.com/AlejandroVelosa/Ecommerce',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'weather app',
+        desc: 'ModaFitAcademlo',
       },
       {
         icon: <FiUser />,
@@ -270,12 +278,12 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'React Js Css',
+        desc: 'JavaScript Css Html ',
       },
       {
-        icon: <FiExternalLink />,
+        icon: <FaEye />,
         title: 'Preview : ',
-        desc: 'https://weather-app-alejandro.netlify.app/',
+        desc: 'https://peppy-faun-d39c6f.netlify.app/#products',
       },
     ],
   },
@@ -300,7 +308,7 @@ export const portfolio = [
         desc: 'React JS',
       },
       {
-        icon: <FiExternalLink />,
+        icon: <FaEye />,
         title: 'Preview : ',
         desc: 'https://rick-and-morty-alejandro.netlify.app/',
       },
@@ -327,7 +335,7 @@ export const portfolio = [
         desc: 'react , css , javascript',
       },
       {
-        icon: <FiExternalLink />,
+        icon: <FaEye />,
         title: 'Preview : ',
         desc: 'https://pokedex-alejadro-velosa.netlify.app/',
       },
@@ -354,36 +362,14 @@ export const portfolio = [
         desc: 'react , css , javascript',
       },
       {
-        icon: <FiExternalLink />,
+        icon: <FaEye />,
         title: 'Preview : ',
         desc: 'https://ecomerse-alejandro-velosa.netlify.app/#/',
       },
     ],
   },
 
-  // {
-  //   id: 5,
-  //   img: Work5,
-  //   title: 'Landing Page',
-  //   details: [
-  //     {
-  //       title: 'Project : ',
-  //       desc: 'Website',
-  //     },
-  //     {
-  //       title: 'Client : ',
-  //       desc: 'Dribble',
-  //     },
-  //     {
-  //       title: 'Language : ',
-  //       desc: 'React JS, Node JS',
-  //     },
-  //     {
-  //       title: 'Preview : ',
-  //       desc: 'www.dribble.com',
-  //     },
-  //   ],
-  // },
+
 
   // {
   //   id: 6,

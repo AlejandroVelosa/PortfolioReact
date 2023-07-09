@@ -8,7 +8,7 @@ import "./style/Themes.css";
 
 // para cambiar el color de la pagina
 const getStorageColor = () => {
-    let color = '#00FF00'
+    let color = '#FF0000'
     if (localStorage.getItem('color')) {
         color = localStorage.getItem('color')
     }
@@ -38,10 +38,10 @@ const Themes = () => {
     }
 
     const toggleTheme = () => {
-        if (theme === 'light-theme') {
-            setTheme('dark-theme')
-        } else {
+        if (theme === 'dark-theme') {
             setTheme('light-theme')
+        } else {
+            setTheme('dark-theme')
         }
     }
     // este sirve para el cambio de color 
@@ -69,10 +69,10 @@ const Themes = () => {
                 >
                     <FaCog />
                 </div>
-
+                {/* 
                 <div className="theme_toggler" onClick={toggleTheme}>
                     {theme === 'light-theme' ? <BsMoon /> : <BsSun />}
-                </div>
+                </div> */}
 
                 <h3 className="style_switcher-title">Style Switcher</h3>
                 <div className="style_switcher-items">
