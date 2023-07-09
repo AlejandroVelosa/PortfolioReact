@@ -197,6 +197,7 @@ import figma from './assets/figma.png'
 import react from './assets/react.png'
 import notejs from './assets/node.png'
 import git from './assets/git.png'
+import gitHub from './assets/gitHub.png'
 
 export const skills = [
   {
