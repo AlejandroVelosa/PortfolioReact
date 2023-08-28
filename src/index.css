@@ -442,8 +442,20 @@ color: var(--first-color);
 }
 
 @media screen and (max-width: 450px) {
-.home_content{
-    margin-block: auto;
+
+    .portfolio_modal-content{
+        
+        height: 25%;
+    }
+
+
+    .section{
+       margin-bottom: 8rem;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .home_content{
     text-align: left;
 }
 

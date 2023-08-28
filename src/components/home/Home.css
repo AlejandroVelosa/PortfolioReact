@@ -89,6 +89,7 @@ display: inline-block;
     margin-block: 16px 32px;
     font-size: var(--h3-font-size);
     text-align: start;
+    text-align: justify;
 }
 
 .color__block{

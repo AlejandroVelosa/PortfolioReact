@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Close from '../../assets/close.svg'
 
-const PortfolioItem = ({ img, title, details }) => {
+const PortfolioItem = ({ img, title, link, details }) => {
 
     const [modal, setModal] = useState(false)
     const handletoggleModal = () => {
@@ -9,13 +9,17 @@ const PortfolioItem = ({ img, title, details }) => {
     }
     return (
         <div className="portfolio_item">
+
             <img src={img} alt="" className="portfolio_img" />
 
-            <div className="portfolio_hover" onClick={handletoggleModal}>
-                <h3 className="portfolio_title">{title}</h3>
-            </div>
+            <a href={link} target="_blank">
+                <div className="portfolio_hover" onClick={handletoggleModal}>
+                    <h3 className="portfolio_title">{title}</h3>
+                </div>
+            </a>
 
-            {
+
+            {/* {
                 modal && (
                     <div className="portfolio_modal">
                         <div className="portfolio_modal-content">
@@ -33,18 +37,18 @@ const PortfolioItem = ({ img, title, details }) => {
 
                                             <div>
                                                 <span className="item_title">{title}</span>
-                                                <span className="item_details"><a target="_blank" className='item_details-link' href={desc}>{desc}</a></span>
+                                                <span className="item_details"><a target="_blank" className='item_details-link item-total' href={desc}>{desc}</a></span>
                                             </div>
                                         </li>
                                     )
                                 })}
                             </ul>
 
-                            <img src={img} alt="" className="modal_img" />
+
                         </div>
                     </div>
                 )
-            }
+            } */}
         </div>
     )
 }

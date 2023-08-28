@@ -30,28 +30,28 @@ import Theme10 from './assets/yellow.png';
 
 export const links = [
   {
-    id: 1,
+    id: 'home',
     name: 'Home',
     icon: <FaHome className='nav__icon' />,
     path: '/',
   },
 
   {
-    id: 2,
+    id: 'about',
     name: 'About',
     icon: <FaUser className='nav__icon' />,
     path: '/about',
   },
 
   {
-    id: 3,
+    id: 'portfolio',
     name: 'Portfolio',
     icon: <FaFolderOpen className='nav__icon' />,
     path: '/portfolio',
   },
 
   {
-    id: 4,
+    id: 'contact',
     name: 'Contact',
     icon: <FaEnvelopeOpen className='nav__icon' />,
     path: '/contact',
@@ -85,8 +85,8 @@ export const personalInfo = [
 
   {
     id: 5,
-    title: 'Front End developer : ',
-    description: 'React',
+    title: 'Full Stack developer',
+
   },
 
   {
@@ -95,15 +95,15 @@ export const personalInfo = [
     description: 'Bogota',
   },
 
-  {
-    id: 7,
-    title: 'Phone : ',
-    description: '+21621184010',
-  },
+  // {
+  //   id: 7,
+  //   title: 'Phone : ',
+  //   description: '+21621184010',
+  // },
 
   {
     id: 9,
-    title: 'Langages : ',
+    title: 'language : ',
     description: 'spanish, English',
   },
 ];
@@ -117,21 +117,21 @@ export const stats = [
 
   {
     id: 2,
-    no: '4+',
-    title: 'Completed <br /> Projects',
+    no: '6+',
+    title: 'Front End <br /> Projects',
   },
 
-  // {
-  //   id: 3,
-  //   no: '81+',
-  //   title: 'Happy <br /> Customers',
-  // },
+  {
+    id: 3,
+    no: '4+',
+    title: 'backend <br /> Projects',
+  },
 
-  // {
-  //   id: 4,
-  //   no: '53+',
-  //   title: ' Awards <br /> Won',
-  // },
+  {
+    id: 4,
+    no: '4+',
+    title: 'Full stack  <br /> Projects',
+  },
 ];
 
 export const resume = [
@@ -153,22 +153,22 @@ export const resume = [
   //   desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
   // },
 
-  // {
-  //   id: 3,
-  //   category: 'experience',
-  //   icon: <FaBriefcase />,
-  //   year: '2005 - 2013',
-  //   title: 'Consultant <span> Videohive </span>',
-  //   desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
-  // },
-
   {
     id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2023',
     title: 'Front End Developer  <span> Academlo </span>',
-    desc: 'Front-end developer specializing in React, with experience using libraries to enhance project quality and create optimized interfaces for an excellent user experience.',
+    desc: 'Front-End developer specialized in React, with experience using libraries to enhance project quality and create optimized interfaces for an excellent user experience. Proficient in crafting custom hooks, CRUD operations, implementing React Router, and utilizing Redux.',
+  },
+
+  {
+    id: 3,
+    category: 'education',
+    icon: <FaGraduationCap />,
+    year: '2023',
+    title: 'Backend Developer  <span> Academlo </span>',
+    desc: 'Backend developer proficient in Node.js, PostgreSQL, Express, and SQL, specialized in crafting robust server-side solutions and enhancing data management through well-structured databases.',
   },
 
   {
@@ -185,7 +185,7 @@ export const resume = [
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2023',
-    title: 'B2 ABA English <span> ABA English </span>',
+    title: 'B2  ABA English <span> ABA English </span>',
     desc: 'I hold a B2 level certificate in English from ABA English, demonstrating proficiency in the language. This certification validates my ability to effectively communicate and comprehend English at an intermediate level.',
   },
 ];
@@ -193,17 +193,17 @@ export const resume = [
 import html from './assets/htmltotal.png'
 import Js from './assets/java.png'
 import css from './assets/css.png'
-import figma from './assets/figma.png'
+import redux from './assets/redux.png'
 import react from './assets/react.png'
 import notejs from './assets/node.png'
 import git from './assets/git.png'
 import gitHub from './assets/github.png'
+import postgress from './assets/postgress.png'
 
 export const skills = [
   {
     id: 1,
     title: 'Html',
-    percentage: '70',
     img: html,
   },
 
@@ -215,6 +215,13 @@ export const skills = [
   },
 
   {
+    id: 8,
+    title: 'React',
+    percentage: '85',
+    img: react,
+  },
+
+  {
     id: 3,
     title: 'Css',
     percentage: '80',
@@ -223,14 +230,14 @@ export const skills = [
 
   {
     id: 4,
-    title: 'Figma',
+    title: 'Redux',
     percentage: '60',
-    img: figma,
+    img: redux,
   },
 
   {
     id: 5,
-    title: 'Note',
+    title: 'Note Js',
     percentage: '30',
     img: notejs,
   },
@@ -249,12 +256,14 @@ export const skills = [
     img: gitHub,
   },
 
+
   {
-    id: 8,
-    title: 'React',
-    percentage: '85',
-    img: react,
+    id: 9,
+    title: 'PostgreSQL',
+    percentage: '65',
+    img: postgress,
   },
+
 ];
 
 
@@ -263,7 +272,7 @@ export const portfolio = [
     id: 1,
     img: Work1,
     title: 'Moda Fit',
-    gitHub: 'https://github.com/AlejandroVelosa/Ecommerce',
+    link: 'https://peppy-faun-d39c6f.netlify.app/#products',
     details: [
       {
         icon: <FiFileText />,
@@ -292,6 +301,7 @@ export const portfolio = [
     id: 2,
     img: Work2,
     title: 'Rick and Morty App',
+    link: 'https://rick-and-morty-alejandro.netlify.app/',
     details: [
       {
         icon: <FiFileText />,
@@ -319,6 +329,7 @@ export const portfolio = [
     id: 3,
     img: Work3,
     title: 'Pokedex App',
+    link: 'https://pokedex-alejadro-velosa.netlify.app/',
     details: [
       {
         icon: <FiFileText />,
@@ -346,6 +357,7 @@ export const portfolio = [
     id: 4,
     img: Work4,
     title: 'Ecommerce',
+    link: 'https://ecomerse-alejandro-velosa.netlify.app/#/',
     details: [
       {
         icon: <FiFileText />,
